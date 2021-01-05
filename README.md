@@ -60,11 +60,11 @@ model_config.yaml       参数设置
 
 ```
 gt_for_visual、structure_for_visual  可视化测试图像的原图与结构图    （已上传）
-gt_train、structure_train            训练集的原图与结构图           （未上传）
-gt_val、structure_val                验证集的原图与结构图           （未上传）
-gt_test、structure_test              测试集的原图与结构图           （未上传）
-gt_testn、structure_testn            阴性测试集的原图与结构图        （未上传）
-gt_testp、structure_testp            阳性测试集的原图与结构图        （未上传）
+gt_train、structure_train            训练集的原图与结构图           （需下载）
+gt_val、structure_val                验证集的原图与结构图           （需下载）
+gt_test、structure_test              测试集的原图与结构图           （需下载）
+gt_testn、structure_testn            阴性测试集的原图与结构图        （需下载）
+gt_testp、structure_testp            阳性测试集的原图与结构图        （需下载）
 ```
 开始训练之前，需要在[model_config.yaml](model_config.yaml)中设置好数据以及超参数。
 
