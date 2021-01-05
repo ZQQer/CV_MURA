@@ -41,7 +41,7 @@ model_config.yaml       参数设置
 
 ### Running
 
-####1.	数据
+#### 1.	数据
 
 斯坦福大学发布的肌肉骨骼X光数据集——[MURA](stanfordmlgroup.github.io/competitions/mura/)
 
@@ -52,7 +52,7 @@ model_config.yaml       参数设置
 且以将图像进行预处理（./data/RTV），若下载了其他数据，需要运行./scripts/RTV_python.py 
 
 
-####2.	训练
+#### 2.	训练
 
 由于数据大小，训练集与测试集没有全部上传，需要自行下载。
 
@@ -76,7 +76,7 @@ gt_testp、structure_testp            阳性测试集的原图与结构图      
 python train.py 
 ```
 
-####3.	测试与可视化
+#### 3.	测试与可视化
 
 开始训练之前，需要在[model_config.yaml](model_config.yaml)中设置好测试数据以及超参数。
 

@@ -2,8 +2,8 @@ import os
 import torch
 import argparse
 import shutil 
-from CV_MURA.src.config import Config
-from CV_MURA.src.structure_flow import StructureFlow
+from src.config import Config
+from src.structure_flow import StructureFlow
 
 def main(mode=None):
     r"""starts the model

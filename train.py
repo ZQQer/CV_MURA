@@ -1,3 +1,3 @@
-from CV_MURA.main import main
+from main import main
 
 main('train')
