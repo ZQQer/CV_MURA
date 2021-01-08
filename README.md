@@ -83,6 +83,8 @@ python train.py
 
 加载网络的名字、数据保存路径等，在[main](main.py)中设置。
 
+**需要将课程Drive中的checkpionts文件夹放置./results/train_inpaint_MURA/路径下才可运行**
+
 最后，运行:
 
 ```bash
