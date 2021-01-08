@@ -30,13 +30,11 @@ FLOW_CORRECTNESS: 0.25        # texture net parameter of sampling correctness lo
 VGG_STYLE: 250                # texture net parameter of vgg_style loss (Optional loss on stage_3)  
 VGG_CONTENT: 0.1              # texture net parameter of vgg_content loss (Optional loss on stage_3) 
 
-
 TRAIN_BATCH_SIZE: 9           # batch size
 DATA_TRAIN_SIZE: 256          # image size for training 
 DATA_TEST_SIZE: 256           # image size for testing (False for never resize)     default:False
 DATA_FLIP: False              # filp image or not when training 
-DATA_CROP: False #[537,537]   # crop size when training (False for never cro)
-#DATA_MASK_TYPE: from_file     # mask type (random_bbox|random_free_form|from_file)
+DATA_CROP: False              # crop size when training (False for never cro)
 DATA_MASK_TYPE: random_bbox     # mask type (random_bbox|random_free_form|from_file)
 STRUCTURE_MODE: L                 # OR RGB
 DATA_RANDOM_BBOX_SETTING:     # parameters for random_bbox
@@ -50,7 +48,7 @@ DATA_RANDOM_FF_SETTING:       # parameters for random_free_form
   ma: 4.0
   ml: 50
   mbw: 20
-DATA_MASK_FILE: '2w_mask' #'./3794_train_mask'   #./txt/irregular_mask.list #parameters for from_file
+DATA_MASK_FILE: 'mask'
 MASK_FILE_RANDOM: False
 
 TEST_MASK_SIZE: 40
@@ -59,9 +57,9 @@ TEST_EDGE: 20
 
 
 # MURA
-DATA_TRAIN_GT: ['./MURA_E_txt/gt_train.list']
-DATA_TRAIN_STRUCTURE: ['./MURA_E_txt/structure_train.list']
-DATA_VAL_GT: ['./MURA_E_txt/gt_testp.list']
-DATA_VAL_STRUCTURE: ['./MURA_E_txt/structure_testp.list']
+DATA_TRAIN_GT: ['./MURA_E_txt/gt_for_visual.list'] #['./MURA_E_txt/gt_train.list']
+DATA_TRAIN_STRUCTURE: ['./MURA_E_txt/structure_for_visual.list'] #['./MURA_E_txt/structure_train.list']
+DATA_VAL_GT: ['./MURA_E_txt/gt_for_visual.list'] #['./MURA_E_txt/gt_testp.list']
+DATA_VAL_STRUCTURE: ['./MURA_E_txt/structure_for_visual.list'] #['./MURA_E_txt/structure_testp.list']
 DATA_TEST_GT: ['./MURA_E_txt/gt_for_visual.list']
 DATA_TEST_STRUCTURE: ['./MURA_E_txt/structure_for_visual.list']
